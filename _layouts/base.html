@@ -1,3 +1,7 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
 <html class="no-js" lang="en">
     <head> 
@@ -6,7 +10,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
  		<link id="defaultIcon1" rel="shortcut icon" href="https://www.sugarlabs.org/assets/favicon_06.png" />
         <title>{{ page.title }}</title>
-        <link href="{{ site.baseurl }}/css/googleFonts.css" rel="stylesheet" type="text/css" >
+        <link href="{{ site.baseurl }}/css/googleFonts.min.css" rel="stylesheet" type="text/css" >
         <meta name="robots" content="index,follow,NOODP" />
         <meta name="description" Content="At Sugar Labs, we make FOSS tools that learners use to explore, discover, create, and reflect. We encourage our users to take responsibility for their learning." />
         <meta name="keywords" Content="Sugar Labs, Sugar, Sugarlabs, Education, Opensource, OpenSource, Sugar activities, activities, Sugar OS, Sugarizer, Sugar on Stick, SOAS, FOSS, Free software, software libre, Free/Libre Software, Constructionism, GSOC, GCI, Outreachy, Sugar Software, Learning" />
@@ -48,15 +52,15 @@
         <!--[if lt IE 9]>
             <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <![endif]-->
-        <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+        <script async src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
         <script type="text/javascript">
             if (typeof jQuery == 'undefined') {
-                document.write(unescape("%3Cscript src='/js/jquery.js' type='text/javascript'%3E%3C/script%3E"));
+                document.write(unescape("%3Cscript async src='/js/jquery.js' type='text/javascript'%3E%3C/script%3E"));
             }
         </script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script>
-            if(typeof($.fn.modal) === 'undefined') {document.write('<script src="{{ site.baseurl }}/js/bootstrap.js"><\/script>')}
+            if(typeof($.fn.modal) === 'undefined') {document.write('<script async src="{{ site.baseurl }}/js/bootstrap.js"><\/script>')}
         </script>
         <script  type="text/javascript" src="{{ site.baseurl }}/js/main.js" defer></script>
         <link rel="canonical" href="https://sugarlabs.org/" />
